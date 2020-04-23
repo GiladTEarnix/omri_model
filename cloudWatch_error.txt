@@ -1,0 +1,41 @@
+2020-04-21 13:19:04,556 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:52252 "GET /ping HTTP/1.1" 200 0
+2020-04-21 13:19:04,661 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:56976 "GET /ping HTTP/1.1" 200 0
+2020-04-21 13:19:09,556 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:52252 "GET /ping HTTP/1.1" 200 1
+2020-04-21 13:19:09,661 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:56976 "GET /ping HTTP/1.1" 200 0
+2020-04-21 13:19:14,556 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:52252 "GET /ping HTTP/1.1" 200 0
+2020-04-21 13:19:14,661 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:56976 "GET /ping HTTP/1.1" 200 0
+2020-04-21 13:19:19,556 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:52252 "GET /ping HTTP/1.1" 200 0
+2020-04-21 13:19:19,661 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:56976 "GET /ping HTTP/1.1" 200 0
+2020-04-21 13:19:21,682 [WARN ] W-9000-a16caa7c25f7e67d1db287a6d com.amazonaws.ml.mms.wlm.WorkerLifeCycle - attachIOStreams() threadName=W-9000-a16caa7c25f7e67d1db287a6d
+2020-04-21 13:19:21,787 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - model_service_worker started with args: --sock-type unix --sock-name /tmp/.mms.sock.9000 --handler model_handler:handle --model-path /opt/ml/models/a16caa7c25f7e67d1db287a6d3be0591/model --model-name a16caa7c25f7e67d1db287a6d3be0591 --preload-model false --tmp-dir /tmp
+2020-04-21 13:19:21,789 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - Listening on port: /tmp/.mms.sock.9000
+2020-04-21 13:19:21,790 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - [PID] 71
+2020-04-21 13:19:21,790 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - MXNet worker started.
+2020-04-21 13:19:21,790 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - Python runtime: 3.5.2
+2020-04-21 13:19:21,790 [INFO ] epollEventLoopGroup-3-1 com.amazonaws.ml.mms.wlm.ModelManager - Model a16caa7c25f7e67d1db287a6d3be0591 loaded.
+2020-04-21 13:19:21,795 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d com.amazonaws.ml.mms.wlm.WorkerThread - Connecting to: /tmp/.mms.sock.9000
+2020-04-21 13:19:21,801 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - Connection accepted: /tmp/.mms.sock.9000.
+2020-04-21 13:19:21,834 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - Backend worker process died.
+2020-04-21 13:19:21,834 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - Traceback (most recent call last):
+2020-04-21 13:19:21,834 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -   File "/usr/local/lib/python3.5/dist-packages/mms/model_service_worker.py", line 174, in start_worker
+2020-04-21 13:19:21,834 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -     self.handle_connection(cl_socket)
+2020-04-21 13:19:21,834 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -   File "/usr/local/lib/python3.5/dist-packages/mms/model_service_worker.py", line 143, in handle_connection
+2020-04-21 13:19:21,835 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -     result, code = self.load_model(msg)
+2020-04-21 13:19:21,835 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -   File "/usr/local/lib/python3.5/dist-packages/mms/model_service_worker.py", line 109, in load_model
+2020-04-21 13:19:21,835 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -     self.service = self.model_loader.load(model_name, model_dir, handler, gpu, batch_size)
+2020-04-21 13:19:21,835 [INFO ] epollEventLoopGroup-4-1 com.amazonaws.ml.mms.wlm.WorkerThread - 9000-088a46d8 Worker disconnected. WORKER_STARTED
+2020-04-21 13:19:21,835 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -   File "/usr/local/lib/python3.5/dist-packages/mms/model_loader.py", line 116, in load
+2020-04-21 13:19:21,836 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -     self.module = importlib.import_module(module_name)
+2020-04-21 13:19:21,836 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+2020-04-21 13:19:21,836 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -     return _bootstrap._gcd_import(name[level:], package, level)
+2020-04-21 13:19:21,836 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+2020-04-21 13:19:21,836 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+2020-04-21 13:19:21,836 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle -   File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+2020-04-21 13:19:21,836 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - ImportError: No module named 'model_handler'
+2020-04-21 13:19:21,836 [WARN ] W-9000-a16caa7c25f7e67d1db287a6d com.amazonaws.ml.mms.wlm.BatchAggregator - Load model failed: a16caa7c25f7e67d1db287a6d3be0591, error: Worker died.
+2020-04-21 13:19:21,838 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d ACCESS_LOG - /10.32.0.1:52252 "POST /models HTTP/1.1" 500 185
+2020-04-21 13:19:21,843 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d com.amazonaws.ml.mms.wlm.ModelManager - Model a16caa7c25f7e67d1db287a6d3be0591 unregistered.
+2020-04-21 13:19:21,848 [ERROR] W-9000-a16caa7c25f7e67d1db287a6d-stdout com.amazonaws.ml.mms.wlm.WorkerLifeCycle - Couldn't create scanner - W-9000-a16caa7c25f7e67d1db287a6d-stdout
+2020-04-21 13:19:21,848 [ERROR] W-9000-a16caa7c25f7e67d1db287a6d-stderr com.amazonaws.ml.mms.wlm.WorkerLifeCycle - Couldn't create scanner - W-9000-a16caa7c25f7e67d1db287a6d-stderr
+2020-04-21 13:19:24,558 [INFO ] W-9000-a16caa7c25f7e67d1db287a6d ACCESS_LOG - /10.32.0.1:52804 "GET /ping HTTP/1.1" 200 0
+2020-04-21 13:19:24,661 [INFO ] pool-1-thread-1 ACCESS_LOG - /10.32.0.1:56976 "GET /ping HTTP/1.1" 200 0
